@@ -14,7 +14,7 @@ export default function LoginClient() {
 
   const { isValidEmail } = useEmailValidator();
 
-  const { setUser, user } = useAuth();
+  const { setUser } = useAuth();
 
   const handleLogin = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
