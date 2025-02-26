@@ -7,7 +7,7 @@ export async function DELETE(
   _request: NextRequest,
   { params }: { params: { id: string } }
 ) {
-  const { id } = await params;
+  const { id } = params;
 
   try {
     // 해당 유저가 삭제를 시도하는지 (권한 체크)
