@@ -5,9 +5,9 @@ const prisma = new PrismaClient();
 
 export async function DELETE(
   _request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
-  const { id } = params;
+  const { id } = await params;
 
   try {
     // 해당 유저가 삭제를 시도하는지 (권한 체크)
