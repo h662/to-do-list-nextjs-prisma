@@ -36,6 +36,8 @@ export async function POST(request: NextRequest) {
       data: user,
     });
   } catch (error) {
+    console.log(error);
+
     return NextResponse.json(
       {
         success: false,
