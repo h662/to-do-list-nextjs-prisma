@@ -45,9 +45,9 @@ export default function SignUpClient() {
   };
 
   return (
-    <main className="min-j-screen flex flex-col items-center justify-center p-8 bg-gray-50">
-      <h1 className="text-3xl font-bold text-gray-800">회원가입</h1>
-      <form className="mt-6 w-full max-w-md space-y-4" onSubmit={handleSubmit}>
+    <main className="inner-container">
+      <h1 className="h1-style">회원가입</h1>
+      <form className="form-style" onSubmit={handleSubmit}>
         <input
           className="input-style"
           type="text"
