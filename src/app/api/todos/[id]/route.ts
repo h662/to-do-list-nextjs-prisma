@@ -17,7 +17,6 @@ export async function DELETE(
     });
 
     return NextResponse.json({ success: true, todoId: todo.id });
-    // @typescript-eslint/no-unused-vars
   } catch (error) {
     return NextResponse.json(
       {
